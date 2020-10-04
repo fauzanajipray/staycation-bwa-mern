@@ -11,11 +11,11 @@ import FormatNumber from "utils/FormatNumber";
 export default function Hero(props) {
   function showMostPicked() {
     window.scrollTo({
-      top: (props.refMostPicked.current.offsetTop = 30),
+      top: props.refMostPicked.current.offsetTop - 30,
       behavior: "smooth",
     });
+    console.log(props.refMostPicked.current.offsetTop - 10);
   }
-
   return (
     <section className="container pt-5" id="hero">
       <div className="row align-item-center">

@@ -6,8 +6,6 @@ export default function Header(props) {
   const getNavLinkClass = (path) => {
     return props.location.pathname === path ? "active" : "";
   };
-
-  console.log(props);
   return (
     <header className="spacing-sm">
       <div className="container">
