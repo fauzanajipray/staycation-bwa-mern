@@ -34,6 +34,7 @@ export default function Hero(props) {
           </p>
           <Button
             className="btn px-5"
+            style={{ height: 50 }}
             hasShadow
             isPrimary
             onClick={showMostPicked}

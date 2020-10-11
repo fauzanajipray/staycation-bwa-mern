@@ -6,6 +6,7 @@
  */
 
 @import "functions";
+@import "colorVariables";
 @import "variables";
 @import "mixins";
 @import "root";
@@ -194,5 +195,18 @@ section {
         transform: scale(1);
       }
     }
+  }
+}
+
+.testimonial-hero, .testimonial-hero img, .testimonial-accent {
+  width: 365px;
+  height: 500px;
+}
+
+.testimonial-hero {
+  .testimonial-accent {
+    border: 2px solid $gray-300;
+    border-radius: 15px 15px 100px 15px;
+    margin: -30px 0 0 -30px;
   }
 }
